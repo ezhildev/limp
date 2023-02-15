@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="left-up" width="32" height="18" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="53">
+ <tileset firstgid="1" source="tsx/assets.tsx"/>
+ <layer id="1" name="platform" width="32" height="18">
+  <data encoding="base64" compression="zlib">
+   eJwzZmBgMB7h2ASInaFYHYg1iOTjYhPDN0KyXxWI5wDxKiiNjNHFVmERRxfDpweGFdHspzcYtZ84+7WQMD5ArLoVWOwXAWI2IGYHYlEC+ikBgkj2CDFgz4vExAWxfkVWCwKGDNjzHyj/w/KnKXFeoRgMVPyTaj+twGCzvweKZ6GxZ6GJz0KTw8XHpQcmh57/OBgQeYMebFz5b6RhANRgUMU=
+  </data>
+ </layer>
+ <objectgroup id="2" name="platform">
+  <object id="1" name="start" x="103.379" y="155.757">
+   <properties>
+    <property name="jump_count" type="int" value="3"/>
+   </properties>
+  </object>
+  <object id="4" name="platform" x="960" y="96" width="32" height="384"/>
+  <object id="6" name="platform" x="32" y="96" width="32" height="384"/>
+  <object id="9" name="platform" x="64" y="480" width="896" height="32"/>
+  <object id="10" name="platform" x="64" y="64" width="896" height="32"/>
+  <object id="12" name="obstacle" x="64" y="96" width="896" height="32"/>
+  <object id="13" name="obstacle" x="64" y="448" width="896" height="32"/>
+  <object id="44" name="platform" x="64" y="256" width="96" height="96"/>
+  <object id="45" name="platform" x="256" y="224" width="96" height="32"/>
+  <object id="46" name="platform" x="256" y="352" width="96" height="32"/>
+  <object id="47" name="platform" x="416" y="288" width="96" height="32"/>
+  <object id="48" name="platform" x="576" y="224" width="96" height="32"/>
+  <object id="49" name="platform" x="576" y="352" width="96" height="32"/>
+  <object id="50" name="platform" x="768" y="288" width="64" height="32"/>
+  <object id="51" name="platform" x="864" y="256" width="96" height="64"/>
+  <object id="52" name="end" x="896" y="224" width="32" height="32"/>
+ </objectgroup>
+</map>

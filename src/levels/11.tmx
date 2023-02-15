@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="left-up" width="32" height="18" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="26">
+ <tileset firstgid="1" source="tsx/assets.tsx"/>
+ <layer id="1" name="platform" width="32" height="18">
+  <data encoding="base64" compression="zlib">
+   eJwTZ2BgEB/FKNgEiJ2pgI3ItF+VgTpAcdT+IWU/LN25ALEWFowPYFPvxEBaeqSWv3EBQuFBrP3Ehgmt7CcXUGI/Pv9ikxMEYlEq2k8qUMRiHiH7RYCYA4jZgJgdiFmoZP8KIu2nZniA7AL5B+YXkL+ESLQfWT+yOcSwSbVrpGIA0fMm7Q==
+  </data>
+ </layer>
+ <objectgroup id="2" name="platform">
+  <object id="2" name="platform" x="128" y="224" width="224" height="32"/>
+  <object id="3" name="platform" x="576" y="224" width="288" height="32"/>
+  <object id="4" name="platform" x="736" y="96" width="32" height="128"/>
+  <object id="5" name="platform" x="160" y="96" width="32" height="128"/>
+  <object id="6" name="platform" x="192" y="64" width="544" height="32"/>
+  <object id="7" name="platform" x="864" y="256" width="32" height="192"/>
+  <object id="8" name="platform" x="768" y="448" width="96" height="32"/>
+  <object id="9" name="platform" x="704" y="352" width="64" height="128"/>
+  <object id="10" name="platform" x="256" y="480" width="448" height="32"/>
+  <object id="11" name="platform" x="128" y="416" width="128" height="64"/>
+  <object id="12" name="platform" x="96" y="256" width="32" height="160"/>
+  <object id="16" name="block" gid="41" x="640" y="224" width="32" height="32"/>
+  <object id="17" name="block" gid="41" x="256" y="224" width="32" height="32"/>
+  <object id="18" name="start" x="192" y="320">
+   <properties>
+    <property name="jump_count" type="int" value="11"/>
+   </properties>
+  </object>
+  <object id="19" name="end" x="800" y="416" width="32" height="32"/>
+  <object id="22" name="platform" x="416" y="288" width="96" height="32"/>
+  <object id="23" name="platform" x="320" y="352" width="64" height="32"/>
+  <object id="25" name="platform" x="544" y="352" width="64" height="32"/>
+ </objectgroup>
+</map>

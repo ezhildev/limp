@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="left-up" width="32" height="18" tilewidth="32" tileheight="32" infinite="0" nextlayerid="4" nextobjectid="14">
+ <tileset firstgid="1" source="tsx/assets.tsx"/>
+ <layer id="1" name="platform" width="32" height="18">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFgwlo0QiTYj+1waj95Kulhnvo7X/0NEep/fj0E5PGqeV/UvMSte0nF9DCflLKFlLtH8jybxSMLAAAbdgMJQ==
+  </data>
+ </layer>
+ <objectgroup id="3" name="platform">
+  <object id="1" name="player" x="224" y="224">
+   <properties>
+    <property name="jump_count" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="2" name="end" x="768" y="160"/>
+  <object id="3" name="stone" x="800" y="128" width="32" height="288"/>
+  <object id="4" name="stone" x="128" y="128" width="32" height="288"/>
+  <object id="5" name="stone" x="160" y="416" width="640" height="32"/>
+  <object id="6" name="stone" x="160" y="96" width="640" height="32"/>
+  <object id="7" name="stone" x="512" y="288" width="96" height="32"/>
+  <object id="8" name="stone" x="448" y="384" width="96" height="32"/>
+  <object id="10" name="stone" x="352" y="320" width="64" height="32"/>
+  <object id="11" name="stone" x="288" y="288" width="32" height="32"/>
+  <object id="12" name="stone" x="256" y="224" width="32" height="32"/>
+  <object id="13" name="stone" x="672" y="256" width="64" height="32"/>
+ </objectgroup>
+</map>

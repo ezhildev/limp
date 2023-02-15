@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="left-up" width="32" height="18" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="46">
+ <tileset firstgid="1" source="tsx/assets.tsx"/>
+ <layer id="1" name="platform" width="32" height="18" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJwzZmBgMB7Fgw6bALEzBdiIQvtVGSgDihT62YVC+50YSA8XSv1MDMAXLkPNfi0kTG37yTEbH1hBov3UAoJAzAbE7EDMAcRCdLaflHyIK/wpiQdy7acWIMV+EQbUuCLEFgXiWQyYcUxsfFOKRehgx3DHAKt4SGc=
+  </data>
+ </layer>
+ <objectgroup id="2" name="platform" locked="1">
+  <object id="27" name="platform" x="128" y="128" width="96" height="64"/>
+  <object id="28" name="platform" x="704" y="128" width="192" height="64"/>
+  <object id="29" name="platform" x="896" y="192" width="32" height="128"/>
+  <object id="30" name="platform" x="768" y="320" width="128" height="128"/>
+  <object id="31" name="platform" x="544" y="448" width="224" height="32"/>
+  <object id="32" name="platform" x="128" y="448" width="384" height="32"/>
+  <object id="34" name="platform" x="480" y="480" width="96" height="32"/>
+  <object id="35" name="platform" x="96" y="192" width="32" height="256"/>
+  <object id="36" name="platform" x="192" y="288" width="96" height="32"/>
+  <object id="37" name="platform" x="192" y="384" width="160" height="32"/>
+  <object id="38" name="platform" x="480" y="256" width="96" height="32"/>
+  <object id="39" name="platform" x="224" y="96" width="480" height="32"/>
+  <object id="40" name="block" gid="41" x="288" y="384" width="32" height="32"/>
+  <object id="41" name="block" gid="41" x="224" y="288" width="32" height="32"/>
+  <object id="42" name="block" gid="41" x="512" y="256" width="32" height="32"/>
+  <object id="43" name="start" x="448" y="416">
+   <properties>
+    <property name="jump_count" type="int" value="10"/>
+   </properties>
+  </object>
+  <object id="44" name="end" x="832" y="288" width="32" height="32"/>
+  <object id="45" name="obstacle" x="512" y="453" width="32" height="27"/>
+ </objectgroup>
+</map>

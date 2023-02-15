@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="left-up" width="32" height="18" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="26">
+ <tileset firstgid="1" source="tsx/assets.tsx"/>
+ <layer id="1" name="platform" width="32" height="18" locked="1">
+  <data encoding="base64" compression="zlib">
+   eJwzZmBgMB7FgwabALEzEdiIRvarMhAHFAfYfkMiw4nUMCPWfnIAMWE2aj/xQAsJU9v+FSS4A5e7yLFfBIjZgJgdiEUpcAM2QGqeJScuBsp+YgA59s8C4h4oFmRAxE0PDvYsJDYHGluIRPtFcOgXQeLjYtOibB6OGAAcsE0U
+  </data>
+ </layer>
+ <objectgroup id="2" name="platform" locked="1">
+  <object id="3" name="platform" x="448" y="128" width="416" height="64"/>
+  <object id="4" name="platform" x="864" y="192" width="32" height="256"/>
+  <object id="5" name="platform" x="672" y="448" width="192" height="32"/>
+  <object id="21" name="platform" x="576" y="448" width="64" height="32"/>
+  <object id="6" name="platform" x="480" y="448" width="64" height="32"/>
+  <object id="7" name="platform" x="352" y="448" width="96" height="32"/>
+  <object id="8" name="platform" x="256" y="480" width="448" height="32"/>
+  <object id="9" name="platform" x="160" y="352" width="96" height="160"/>
+  <object id="10" name="platform" x="128" y="128" width="32" height="224"/>
+  <object id="11" name="platform" x="160" y="96" width="288" height="32"/>
+  <object id="12" name="platform" x="480" y="288" width="96" height="32"/>
+  <object id="13" name="platform" x="576" y="384" width="64" height="32"/>
+  <object id="14" name="end" x="192" y="320" width="32" height="32"/>
+  <object id="15" name="start" x="736" y="384">
+   <properties>
+    <property name="jump_count" type="int" value="7"/>
+   </properties>
+  </object>
+  <object id="16" name="platform" x="672" y="320" width="64" height="32"/>
+  <object id="17" name="block" gid="41" x="768" y="448" width="32" height="32"/>
+  <object id="19" name="block" gid="41" x="480" y="288" width="32" height="32"/>
+  <object id="20" name="block" gid="41" x="576" y="384" width="32" height="32"/>
+  <object id="18" name="block" gid="41" x="704" y="320" width="32" height="32"/>
+  <object id="22" name="obstacle" x="256" y="453" width="96" height="27"/>
+  <object id="23" name="obstacle" x="448" y="453" width="32" height="27"/>
+  <object id="24" name="obstacle" x="544" y="453" width="32" height="27"/>
+  <object id="25" name="obstacle" x="640" y="453" width="32" height="27"/>
+ </objectgroup>
+</map>
