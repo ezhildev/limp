@@ -9,16 +9,8 @@ class MenuScreen:
 		self.is_change_screen = False
 		self.click_sound = pygame.mixer.Sound('./src/audios/select.ogg')
 		self.texts = pygame.sprite.Group(
-			Text(
-				'press Enter to play', 
-				font=FONT_S,
-				position=(WINDOW_CENTER[0], WINDOW_HEIGHT - 5 * GRID_SIZE)
-			),
-			Text(
-				TITLE, 
-				font=FONT_L,
-				position=WINDOW_CENTER
-			)
+			Text('press Enter to play', font=FONT_S, position=(WINDOW_CENTER[0], WINDOW_HEIGHT - 5 * GRID_SIZE)),
+			Text(TITLE, font=FONT_L, position=WINDOW_CENTER)
 		)
 
 	def update(self):
@@ -63,6 +55,9 @@ class LevelScreen:
 					self.is_restart_level = False
 				elif self.levels[self.level_number].is_complete: 
 					self.level_number += 1
+					if self.level_number >= len(self.levels):
+						self.game.screen = CreditsScreen(self.game)
+						return
 
 				elif self.is_back_menu:
 					save_game({'level_number':self.level_number}, './src/save.txt')
@@ -70,10 +65,7 @@ class LevelScreen:
 					self.game.screen = MenuScreen(self.game)
 					return
 
-				if self.level_number >= len(self.levels):
-					self.game.screen = CreditsScreen(self.game)
-				else:
-					self.levels[self.level_number].load()
+				self.levels[self.level_number].load()
 		else:
 			fade_out(SCREEN_FADER, 5)
 
