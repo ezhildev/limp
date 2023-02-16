@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="left-up" width="32" height="18" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="26">
+<map version="1.9" tiledversion="1.9.2" orientation="orthogonal" renderorder="left-up" width="32" height="18" tilewidth="32" tileheight="32" infinite="0" nextlayerid="3" nextobjectid="29">
  <tileset firstgid="1" source="tsx/assets.tsx"/>
  <layer id="1" name="platform" width="32" height="18">
   <data encoding="base64" compression="zlib">
-   eJwTZ2BgEB/FKNgEiJ2pgI3ItF+VgTpAcdT+IWU/LN25ALEWFowPYFPvxEBaeqSWv3EBQuFBrP3Ehgmt7CcXUGI/Pv9ikxMEYlEq2k8qUMRiHiH7RYCYA4jZgJgdiFmoZP8KIu2nZniA7AL5B+YXkL+ESLQfWT+yOcSwSbVrpGIA0fMm7Q==
+   eJwTZ2BgEB/FKNgEiJ2pgI3ItF+VgTpAcdT+IWU/LN25ALEWFowPYFPvxEBaeqSGv/G5k1B4EGs/vjChh/3kAkrsx5cGsMkJArEoFe0nFShiMY+Q/SJAzAHEbEDMDsQsVLJ/BZH2UzM8QHaB/APzC8hfQiTaj6wf2Rxi2KTaNVIxAEbRJ0E=
   </data>
  </layer>
  <objectgroup id="2" name="platform">
@@ -29,5 +29,6 @@
   <object id="22" name="platform" x="416" y="288" width="96" height="32"/>
   <object id="23" name="platform" x="320" y="352" width="64" height="32"/>
   <object id="25" name="platform" x="544" y="352" width="64" height="32"/>
+  <object id="26" name="platform" x="640" y="256" width="32" height="64"/>
  </objectgroup>
 </map>
