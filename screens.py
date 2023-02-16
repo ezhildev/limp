@@ -56,6 +56,7 @@ class LevelScreen:
 				elif self.levels[self.level_number].is_complete: 
 					self.level_number += 1
 					if self.level_number >= len(self.levels):
+						save_game({'level_number':0}, './src/save.txt')
 						self.game.screen = CreditsScreen(self.game)
 						return
 
