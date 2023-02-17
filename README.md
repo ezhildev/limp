@@ -32,9 +32,12 @@ python main.py
 ## 🎮 CONTROLS
 Movements | Keys
 ----------|---------
-Jump      | ⬆️ or 🆆
-Left      | ⬅️ or 🅰
-Right     | ➡️ or 🅳 
+Jump      | ⬆️ or W
+Left      | ⬅️ or A
+Right     | ➡️ or D
+Restart   | R
+Enter    | ENTER
+back to menu      | ESC
 
 ![-------------------------------](https://ezhildev.github.io/limp/src/graphics/rainbow.PNG)
 
