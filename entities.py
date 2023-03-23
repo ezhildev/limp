@@ -20,8 +20,8 @@ class Player(AnimatedSprite):
 		self.direction = pygame.Vector2(0, 1)
 		self.acceleration = pygame.Vector2(1, 1)
 		self.velocity = pygame.Vector2(0, 0)
-		self.gravity = 9
-		self.jump_speed = -14
+		self.gravity = 8
+		self.jump_speed = -9
 		self.max_speed = 5
 		self.load(0, 0)
 
@@ -68,7 +68,7 @@ class Player(AnimatedSprite):
 			self.sound['jump'].play()
 
 		if self.is_jump:
-			self.velocity.y = lerp(self.velocity.y, 0, 1)
+			self.velocity.y = lerp(self.velocity.y, 0, .5)
 			self.direction.y = -1
 			if self.velocity.y == 0:
 				self.is_jump = False

@@ -8,12 +8,33 @@ class MenuScreen:
 		self.game = game
 		self.is_change_screen = False
 		self.click_sound = pygame.mixer.Sound('./src/audios/select.ogg')
+		self.button_change_sound = pygame.mixer.Sound('./src/audios/button_change.ogg')
+		self.new_game_button = Text('New Game', font=FONT_S, position=(WINDOW_CENTER[0], WINDOW_HEIGHT - 5 * GRID_SIZE))
+		self.continue_button = Text('Continue', font=FONT_S, position=(WINDOW_CENTER[0], WINDOW_HEIGHT - 3.5 * GRID_SIZE))
+
 		self.texts = pygame.sprite.Group(
-			Text('press Enter to play', font=FONT_S, position=(WINDOW_CENTER[0], WINDOW_HEIGHT - 5 * GRID_SIZE)),
-			Text(TITLE, font=FONT_L, position=WINDOW_CENTER)
+			Text(TITLE, font=FONT_L, position=WINDOW_CENTER),
+			self.new_game_button,
+			self.continue_button
 		)
+		
+		if read_game('./src/save.txt')['level_number'] != 0:
+			self.current_button = self.continue_button
+			self.new_game_button.image.set_alpha(255 * .3)
+		else: 
+			self.current_button = self.new_game_button
+			self.continue_button.image.set_alpha(255 * .3)
 
 	def update(self):
+		if INPUT.down.kup or INPUT.up.kup:
+			self.button_change_sound.play()
+			self.current_button.image.set_alpha(255 * .3)
+			if self.current_button == self.new_game_button:
+				self.current_button = self.continue_button
+			else:
+				self.current_button = self.new_game_button
+			self.current_button.image.set_alpha(255)
+
 		if INPUT.enter.kup and not self.is_change_screen:
 			self.is_change_screen = True
 			self.click_sound.play()
@@ -21,6 +42,8 @@ class MenuScreen:
 		if self.is_change_screen:
 			fade_in(SCREEN_FADER, 5)
 			if SCREEN_FADER.get_alpha() >= 255:
+				if self.current_button == self.new_game_button:
+					save_game({'level_number':0}, './src/save.txt')
 				self.game.screen = LevelScreen(self.game)
 		else:
 			fade_out(SCREEN_FADER, 5)
